@@ -1,0 +1,11 @@
+CPU speed checker
+
+`./speed fast` to get a quick reading (may be horribly inaccurate due to frequency scaling)
+
+`./speed` to get a fairly reliable reading (takes longer)
+
+`./speed slow` to get a really good speed reading (takes much longer)
+
+Uses RDTSC and sched_setaffinity so should work on any CPU type that supports RDTSC (i.e. both AMD and Intel)
+
+Automatic overclocking (Turbo Boost / Turbo Core) will screw things up a bit.
